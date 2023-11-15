@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favian's calculator </title> 
+<style>body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-image: linear-gradient(180deg, maroon, red);
+    text-align: center;
+    padding: 1.1rem;
+    overflow: hidden;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif, "Arial";
+    font-size: 20px;
+    margin: 0 1rem;
+    display: inline-block;
+  }
+  
+  div.container {
+    /*   height: 150vh; */
+    width: 80vw;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  div.container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  img#banner-logo {
+    width: 80vw;
+    height: 30vh;
+    vertical-align: bottom;
+  }
+  
+  /*Customer survey*/
+  h1 {
+    color: maroon;
+    font-size: 3rem;
+    font-family: sans-serif, "Arial";
+  }
+  
+  /*Description*/
+  p {
+    font-family: sans-serif, "Arial";
+    font-size: 1.3rem;
+  }
+  
+  /*Beige square thing */
+  div.form-wrapper {
+    border-style: solid;
+    /*   border-color: black; */
+    /*   border-radius: 30px; */
+    background-color: beige;
+    width: 48%;
+    /*   height: 35%; */
+    /*   display: inline-block; */
+    float: left;
+    box-sizing: border-box;
+    border-radius: 5%;
+  }
+  div.form-wrapper:nth-of-type(2) {
+    float: right;
+  }
+  div.form-wrapper-2 {
+    /*   border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: beige;
+    width: 40%; */
+    /*   height: 52%; */
+    /*   position: absolute; */
+  
+    /*   margin: -530px 600px; */
+  }
+  
+  form > div {
+    /*   border: 5px solid red; */
+    margin: 1rem 0;
+  }
+  
+  form > div::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  label {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: left;
+    padding-right: 0.2rem;
+  }
+  
+  input::placeholder {
+    color: purple;
+  }
+  
+  input {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    height: 1.5rem;
+  }
+  
+  label,
+  input {
+    box-sizing: border-box;
+  }
+  
+  div#wrapper {
+    float: left;
+  }
+  
+  button {
+    margin: 20% 8%;
+  }
+  </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img id="banner-logo" src="https://drive.google.com/uc?id=1XVrJasLndnCWu2aB1AbxBrHP4CxtZ7YP">
+      
+        <!--Form-->
+        <nav>
+          <a href="https://www.west-mec.edu/">Home</a>
+          <a href="https://www.west-mec.edu/">Menu</a>
+          <a href="https://www.ikea.com/">Directions</a>
+          <a href="https://www.ikea.com/">Coupons</a>
+          <a href="https://www.ikea.com/">Orders</a>
+          <a href="https://www.ikea.com/">Catering</a>
+          <a href="https://www.ikea.com/">Reviews</a>
+        </nav>
+      
+        <h1>Customer Survey</h1>
+        <p>Thank you for taking our customer survey. Your response helps Red Ball Pizza maintain the tradition that has made us the top-rated pizzeria in the metro area. All participants are automatically entered into a monthly drawing to receive a Red Ball Express PizzaFest containing two large pizzas, a 2-liter soda, and a side order of chicken wings. Check your e-mail inbox for contest results.</p>
+      
+        <br>
+      
+        <p>Surveys are private and confidential. Red Ball Pizza will not share your contact information with third parties, ever.</p>
+      
+        <br>
+      
+        <p>Required values are marked by an asterisk (*)</p>
+      
+        <div class="form-wrapper">
+      
+          <form id="customer-information">
+      
+            <div class="form-input-group">
+              <label for="name-input">Name</label>
+              <input type="text" placeholder="First and last name" id="name-input">
+            </div>
+      
+            <div>
+              <label for="address-input">Address</label>
+              <input type="text" placeholder="Street address" id="address-input">
+            </div>
+      
+            <div>
+              <label for="city-input">City</label>
+              <input type="text" placeholder="City" id="city-input">
+            </div>
+      
+            <div>
+              <label for="state-input">State</label>
+              <input type="text" placeholder="Street address" id="state-input">
+            </div>
+      
+            <div>
+              <label for="postal-input">Postal code</label>
+      
+              <input type="number" id="postal-input" min="0" value="0">
+            </div>
+            <div>
+              <label for="phone-input">Phone Number</label>
+              <input type="number">
+            </div>
+            <div>
+              <label for="name-input">Email</label>
+              <input type="text" placeholder="Street address" id="address-input">
+            </div>
+            <div>
+      
+              <label for="choice-input"> Where did you hear about us?
+                (select all that apply) </label>
+              <select id="referral-source" size="5">
+      
+                <option value="internet">Internet</option>
+      
+                <option value="magazine">Magazine</option>
+      
+                <option value="Newspaper"> Newspaper</option>
+      
+                <option value="Word of Mouth"> Word of Mouth </option>
+      
+                <option value="Other"> Other </option>
+      
+              </select>
+            </div>
+            <div>
+              <label for="choice-input"> What's your favorite dish? </label>
+              <SELECT>
+      
+                <OPTION Value="1 pizza">Antipasto Pizza</OPTION>
+                <OPTION Value="2 pizza ">Pepperoni Pizza</OPTION>
+                <OPTION Value=" 3 pizza">Hawaiian Pizza</OPTION>
+                <OPTION Value="4 pizza">Buffalo Pizza</OPTION>
+                <OPTION Value="5 pizza">Margherita Pizza</OPTION>
+      
+              </SELECT>
+            </div>
+      
+            <div>
+              <label for="name-input">How many times do you dine out per month? </label>
+              <input type="number" placeholder="" id="address-input">
+            </div>
+      
+            <div>
+              <label for="name-input">Add me to your mailing list for great coupons and specials!</label>
+              <input type="checkbox">
+            </div>
+      
+          </form>
+        </div>
+      
+        <div class="form-wrapper">
+      
+          <form id="customer-information">
+      
+            <div>
+              <label for="date-input"> Date Of Visit</label>
+              <input type="date" id="birthday-input" />
+            </div>
+      
+            <div>
+              <label for="order-date"> Order Type </label>
+              <SELECT>
+      
+                <OPTION Value="1 pizza">Carry Out</OPTION>
+                <OPTION Value="2 pizza ">Dine-In</OPTION>
+                <OPTION Value=" 3 pizza">Delivery</OPTION>
+                <OPTION Value="4 pizza">Take 'n Bake</OPTION>
+      
+              </SELECT>
+            </div>
+      
+            <div id="wrapper">
+              <label for="yes_no_radio">Was your order correct?</label>
+              <p>
+                <input type="radio" name="yes_no" checked>Yes</input>
+              </p>
+              <p>
+                <input type="radio" name="yes_no">No</input>
+              </p>
+            </div>
+      
+            <div id="wrapper">
+              <label for="yes_no_radio">Was your service friendly?</label>
+              <p>
+                <input type="radio" name="yes_no" checked>Yes</input>
+              </p>
+              <p>
+                <input type="radio" name="yes_no">No</input>
+              </p>
+            </div>
+      
+            <div id="wrapper">
+              <label for="yes_no_radio">Do you agree to the terms?</label>
+              <p>
+                <input type="radio" name="yes_no" checked>Yes</input>
+              </p>
+              <p>
+                <input type="radio" name="yes_no">No</input>
+              </p>
+            </div>
+      
+            <div class="formRow">
+              <label for="rangeBox">Rate the overall service <br /> (0=poor; 10=great)</label>
+              0
+              <input name="serviceRate" id="rangeBox" type="range" value="5" step="1" min="0" max="10" />
+              10
+            </div>
+      
+          </form>
+        </div>
+        <button> sumbit </button>
+      
+        <button> restart </button>
+<script>const testImage = document.getElementById("test-image");
+    const bannerLogo = document.getElementById("banner-logo");
+    const customerInfoForm = document.getElementById("customer-information");
+    
+    let hamburgerSrc =
+      "https://drive.google.com/uc?id=1CnkfA7eH9vAEcuHo-eSbTh0QQdnpIcQb";
+    let redX = "https://drive.google.com/uc?id=1DhvGl41dsjs4X2VE4skPXMj6tRzDVHOB";
+    let greenCheck =
+      "https://drive.google.com/uc?id=1LDcwQ0vWPkphHPOMDOzOZ8ei3P5hEunv";
+    let bannerSrc =
+      "https://drive.google.com/uc?id=1XVrJasLndnCWu2aB1AbxBrHP4CxtZ7YP";
+    let checkerBoard =
+      "https://drive.google.com/uc?id=1xTkMkhjX350bTk1q0hZXm6RwQKKK0j4T";
+    
+    document.body.style.backgroundImage = `url(${checkerBoard})`;
+    testImage.src = redX;
+    bannerLogo.src = bannerSrc;
+    
+    customerInfoForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+    }); </script>
+</body>
+
+</html>
